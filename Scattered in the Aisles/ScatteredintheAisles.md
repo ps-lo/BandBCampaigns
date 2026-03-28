@@ -5,6 +5,16 @@
 
 *A scenario based on the 2025 Scattered Spider retail attacks. Your organization's third-party service provider has been compromised, and the attackers are using social engineering to pivot deep into retail networks. Can your team detect a supply chain intrusion before customer data is exfiltrated and ransomware is deployed?*
 
+>This scenario was part of a series presented to undergaduate Comp Sci students. Modified rules apply, meaning that solves require a specific way of thinking outlined in the "why procedures succeed or fail" section. In different environments, you may use these as discussion prompts instead. In some other scenarions I may call this "hard mode" It is an educational game, just play and help everyone learn. Feel free to add to the story or change anything to fit your audience.
+---
+## For in person or at play.backdoorsandbreaches.com. I typically use the Core + Expansion 
+For those who don't know me, I'm Steven, and I've led over 1000 Backdoors & Breaches sessions at this point. I am trying to write up some of the scenarios to share to hopefully help others leverage Backdoors & Breaches to teach or run tabletops. Some scenarios are based on real events, others are more "well, what if" scenarios. 
+
+**Thank you to the Black Hills Information Security team for making and sharing this game with the community!** I stand on the shoulders of giants and often leverage tools made by others to help make training more enjoyable or impactful. 
+
+Note: Sometimes I modify some rules. Where I do, I try to note that in the scenario. Original rules are here: https://www.blackhillsinfosec.com/tools/backdoorsandbreaches/ 
+
+Play online at https://play.backdoorsandbreaches.com or purchase cards from the Spearphish General Store (https://spearphish-general-store.myshopify.com/collections/backdoors-breaches-incident-response-card-game)
 ---
 
 ## Background
