@@ -42,8 +42,8 @@ The hardest part of a ransomware incident isn't the technology. It's the decisio
 | Category | Step | Card | What Happened (Plain Language) |
 |---|---|---|---|
 | Initial Compromise | **How did the attackers get in?** | **Exploitable External Service** | The company uses a firewall/VPN appliance to allow employees to work remotely. This appliance had a known security vulnerability that the manufacturer issued a fix for two months ago. The IT team hadn't applied the fix yet because it required a maintenance window, and scheduling kept getting pushed back. The attackers used this vulnerability to get into the network without needing anyone's password. |
-| Pivot and Escalate | **How did they spread through the network?** | **Internal Password Spray** | Once inside, the attackers tried common passwords against every account in the system. Several employees were using simple passwords like "Summer2025!" and "CompanyName1". Three accounts — including one with administrator access — were compromised. With the admin account, the attackers could reach every system in the company. |
-| C2 and Exfil | **How did they steal data and deploy ransomware?** | **HTTP as Exfil** | Before encrypting anything, the attackers spent five days quietly copying sensitive data — customer records, employee HR files, financial statements, and intellectual property — to their own servers. Only after the data was safely stolen did they deploy the ransomware that encrypted every server and workstation. Now they have leverage: even if you restore from backups, they still have your data and will publish it unless you pay. |
+| Pivot and Escalate | **How did they spread through the network?** | **Internal Password Spray** | Once inside, the attackers tried common passwords against every account in the system. Several employees were using simple passwords like "Summer2025!" and "CompanyName1". Three accounts, including one with administrator access, were compromised. With the admin account, the attackers could reach every system in the company. |
+| C2 and Exfil | **How did they steal data and deploy ransomware?** | **HTTP as Exfil** | Before encrypting anything, the attackers spent five days quietly copying sensitive data including customer records, employee HR files, financial statements, and intellectual property to their own servers. Only after the data was safely stolen did they deploy the ransomware that encrypted every server and workstation. Now they have leverage: even if you restore from backups, they still have your data and will publish it unless you pay. |
 | Persistence | **How did they make sure they could stay?** | **New User Added** | The attackers created a new user account with administrator privileges, named to blend in with existing IT staff accounts. Even if the original compromised accounts were discovered and disabled, this hidden backdoor account ensures the attackers can get back in. |
 
 ---
@@ -55,11 +55,11 @@ For an executive audience, redefine the Procedure Cards to reflect business deci
 | Actual Card Name | Plain Language Name | What It Represents |
 |---|---|---|
 | **Crisis Management** | **"Activate the Crisis Team"** | Assembling leadership, legal, communications, IT, HR, and external advisors into a coordinated response. |
-| **Isolation** | **"Contain the Damage"** | Disconnecting systems, revoking access, and stopping the spread — even if it means shutting things down further. |
+| **Isolation** | **"Contain the Damage"** | Disconnecting systems, revoking access, and stopping the spread even if it means shutting things down further. |
 | **Endpoint Security Protection Analysis** | **"Assess the Scope"** | Understanding which systems are affected, which are still operational, and whether backups are intact. |
 | **Firewall Log Review** | **"Find the Entry Point"** | Identifying how the attackers got in so you can close the door and prevent re-entry. |
 
-**Established Procedures** (these get the +3 modifier):
+**Established Procedures** (these get the +3 modifier) Feel free to add additional:
 - Crisis Management / "Activate the Crisis Team"
 - Endpoint Security Protection Analysis / "Assess the Scope"
 
@@ -140,7 +140,7 @@ These conversations are the real value of this exercise.
 
 4. **Backups Are Your Lifeline:** The offsite backup survived because it was isolated from the main network. **If your backups are connected to the same network as your production systems, they'll be encrypted too. Do you have truly offline or immutable backups? Have you tested restoring from them recently?**
 
-5. **Patch Management Is a Leadership Issue:** The attackers got in through a vulnerability that had a fix available for two months. The patch wasn't applied because of scheduling delays. **Patching isn't just an IT task, it's a risk management decision. Does leadership have visibility into the organization's patching status for critical systems or was maintenance deferred by senior leadership?**
+5. **Patch Management Is a Leadership Issue:** The attackers got in through a vulnerability that had a fix available for two months. The patch wasn't applied because of scheduling delays. **Patching isn't just an IT task, it's a risk management decision. Does leadership have visibility into the organization's patching status for critical systems? Was maintenance deferred by senior leadership?**
 
 6. **Business Continuity:** Could your organization operate for a day without email, phones, and your core business applications? A week? **What's your manual fallback plan? Can employees access anything they need from personal devices or alternative systems?**
 
